@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+  crossorigin="anonymous"
+    >
+  <link rel="stylesheet" href="." > <!--link CSS-->
+  <title>Weather Dashboard</title>
+</head>
+
+<body  class="bg-light">
+    <header  >
+        <h1 class="bg-primary p-3 mb-2 text-white text-center">Weather Dashboard</h1>
+    </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h2 class="bg-light"> Search for a City:</h2>
+        <label for="city-search-term"></label>
+        <div class="input-group">
+          <input type="text" id="city-search-term" name="city-search-term" class="form-control">
+          <button class="btn btn-primary" id="search1">Search</button>
+        </div>
+      </div>
+        <div class="col-md-8">
+        <form class="maincity">
+          <h1 class="subtitle">  <span id="list-city"></h2>
+          <h2 class="subtitle">Temperature: <span id="temperature"></span></h2>
+          <h2 class="subtitle">Wind: <span id="wind"></span></h2>
+          <h2 class="subtitle">Humidity: <span id="humidity"></span></h2>
+        </form>
+      </div>
+    </div>
+        <div class="col-md-3 offset-md-3  ">
+          <h2>5 Day Forecast: </h2>
+        </div>
+  </div>
+  <div class="row"> <!-- Start a new row for the 5 Day Forecast -->
+    <div class="col-md-2 offset-md-3" >
+      <form class="days1to5">
+      <h3 class="subtitle"> <span id="day1date" ></span></h3>
+      <h3 class="subtitle">Temperature: <span id="day1temperature" ></span></h3>
+      <h3 class="subtitle">Wind: <span id="day1wind" ></span></h3>
+      <h3 class="subtitle">Humidity: <span id="day1humidity" ></span></h3>
+      </form>
+    </div>
+    <div class="col-md-2">
+    <form class ="days1to5">
+    <h3 class="subtitle"> <span id="day2date" ></span></h3>
+    <h3 class="subtitle">Temperature: <span id="day2temperature" ></span></h3>
+    <h3 class="subtitle">Wind: <span id="day2wind" ></span></h3>
+    <h3 class="subtitle">Humidity: <span id="day2humidity" ></span></h3>
+    </form>
+    </div>
+    <div class="col-md-2">
+    <form class ="days1to5">
+    <h3 class="subtitle"> <span id="day3date" ></span></h3>
+    <h3 class="subtitle">Temperature: <span id="day3temperature" ></span></h3>
+    <h3 class="subtitle">Wind: <span id="day3wind" ></span></h3>
+    <h3 class="subtitle">Humidity: <span id="day3humidity" ></span></h3>
+    </form>
+    </div>
+     <div class="col-md-2">
+    <form class ="days1to5">
+    <h3 class="subtitle"> <span id="day4date" ></span></h3>
+    <h3 class="subtitle">Temperature: <span id="day4temperature" ></span></h3>
+    <h3 class="subtitle">Wind: <span id="day4wind" ></span></h3>
+    <h3 class="subtitle">Humidity: <span id="day4humidity" ></span></h3>
+    </form>
+    </div>
+    <div class="col-md-2">
+      <form class ="days1to5">
+        <h3 class="subtitle"> <span id="day5date" ></span></h3>
+        <h3 class="subtitle">Temperature: <span id="day5temperature" ></span></h3>
+        <h3 class="subtitle">Wind: <span id="day5wind" ></span></h3>
+        <h3 class="subtitle">Humidity: <span id="day5humidity" ></span></h3>
+      </form>
+    </div>
+    <div class="col-12 ">
+      <h2 class="subtitle">Recent Searches: <span id="repo-search-term"></span></h2>
+      <div id="citiescontainer" class="city-item"></div>
+</div>
+  
+  <script src="."></script> <!--link JS-->
+</body>
+</html>
