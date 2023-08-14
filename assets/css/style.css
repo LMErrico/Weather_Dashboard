@@ -1,0 +1,44 @@
+.header-gradient {
+    background: linear-gradient(to right, rgb(2, 2, 44), blue);
+}
+
+.city-item {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+#results {
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: rgb(3, 3, 46);
+}
+
+#forecast {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.forecast-item {
+    width: calc(100% / 5); 
+}
+
+@media (max-width: 768px) {
+    .forecast-item {
+      width: calc(100% / 2); 
+    }
+}
+  
+@media (max-width: 480px) {
+    .forecast-item {
+      width: 100%; 
+    }
+}
