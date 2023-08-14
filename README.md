@@ -14,7 +14,7 @@ N/A
 
 ## Usage
 
-The URL to the page is 
+The URL to the page is https://lmerrico.github.io/Weather_Dashboard/
 
 Search for a city and get a view of the current weather conditions (date, temperature, weather icon, wind and humidity) for that city and its 5-day forecast. 
 
